@@ -95,6 +95,7 @@ public:
     }
 
     const vocabulary &get_vocabulary() const { return shared->input_vocab; }
+    const vocabulary &get_output_vocabulary() const { return shared->output_vocab; }
 
     int lookup_input_word(const std::string &word) const
     {
